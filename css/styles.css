@@ -8,7 +8,14 @@ body{
 	padding: 0;
 	margin:0;
 	background-color: #f4f4f4;
+	width: auto;
+	min-height: 400px;
+	background:url('../img/showcase.jpg') no-repeat 0 -50px;
+	text-align: center;
+	margin: 0 auto;
+	color: #ffffff;
 }
+
 
 /*Global Styles*/
 
@@ -47,18 +54,18 @@ ul{
 /*Header*/
 
 header {
-	background: rgba(53,66,74,.6);
+	background: rgba(53,66,74,.1);
 	color: #ffffff;
 	padding-top: 15px;
 	min-height: 50px;
-	border-bottom: #ccc 3px solid;
+
 }
 
 header a {
 	color:#ffffff;
 	font-weight: normal;
 	text-decoration: none;
-	text-transform: uppercase;
+	/*text-transform: uppercase; */
 	font-size: 16px;
 }
 
@@ -75,7 +82,7 @@ header .branding h1{
 	margin: 0;
 	float: left;
 	font-weight: normal;
-	text-transform: uppercase;
+
 
 }
 
@@ -86,7 +93,7 @@ header nav{
 }
 
 header .highlight, header .current a{
-	color: #9bc3f6;
+	color: #000000;
 	font-weight: bold;
 }
 
@@ -97,6 +104,8 @@ header a:hover{
 
 /*Showcase*/
 
+	/*MOVED TO BODY Styles */
+	/*
 .showcase.container{
 	width: auto;
 	min-height: 400px;
@@ -105,9 +114,10 @@ header a:hover{
 	margin: 0 auto;
 	color: #ffffff;
 }
+*/
 
 .showcase.container h1 {
-	margin-top: 100px;
+	margin-top: 300px;
 	font-size: 55px;
 	margin-bottom: 10px;
 }
@@ -116,6 +126,57 @@ header a:hover{
 	font-size: 20px;
 }
 
+
+
+/*Boxes*/
+
+.boxes{
+	margin-top: 20px;
+}
+
+.boxes .box{
+	float: left;
+	text-align: center;
+	width: 30%;
+	padding: 10px;
+}
+
+.boxes .box img{
+	width: 90px;
+}
+
+
+/*Sidebar*/
+aside.sidebar{
+	float: right;
+	width: 30%;
+	margin-top: 10px;
+}
+
+aside.sidebar .quote input, aside.sidebar .quote textarea{
+	width: 90%;
+	padding:5px;
+}
+
+/*Main-Col*/
+article.main-col{
+	float: left;
+	width: 60%;
+	background-color: rgba(255,255,255,.4);
+}
+
+/*Services*/
+ul.services li {
+list-style: none;
+padding: 20px;
+border: #cccccc solid 1px;
+margin-bottom: 5px;
+background: #e6e6e6;
+}
+
+.quote button {
+	width: 100%;
+}
 
 /*Newsletter*/
 
@@ -140,62 +201,14 @@ header a:hover{
 	width: 250px;
 }
 
-/*Boxes*/
-
-.boxes{
-	margin-top: 20px;
-}
-
-.boxes .box{
-	float: left;
-	text-align: center;
-	width: 30%;
-	padding: 10px;
-}
-
-.boxes .box img{
-	width: 90px;
-}
-
-
-/*Sidebar*/
-aside#sidebar{
-	float: right;
-	width: 30%;
-	margin-top: 10px;
-}
-
-aside#sidebar .quote input, aside#sidebar .quote textarea{
-	width: 90%;
-	padding:5px;
-}
-
-/*Main-Col*/
-article#main-col{
-	float: left;
-	width: 65%
-}
-
-/*Services*/
-ul#services li {
-list-style: none;
-padding: 20px;
-border: #cccccc solid 1px;
-margin-bottom: 5px;
-background: #e6e6e6;
-}
-
-.quote button {
-	width: 100%;
-}
 
 
 
 /*Footer*/
 
 footer {
-	padding: 20px;
-	margin-top: 20px;
+	padding: 5px;
+	margin:0;
 	color: #ffffff;
 	background-color: #ccc;
 	text-align: left;
@@ -210,8 +223,8 @@ footer {
 	.newsletter h1,
 	.newsletter form,
 	.boxes .box,
-	article#main-col,
-	aside#sidebar{
+	article.main-col,
+	aside.sidebar{
 		float:none;
 		text-align: center;
 		width:100%;
