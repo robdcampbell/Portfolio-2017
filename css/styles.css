@@ -7,10 +7,10 @@ body{
 	font: 15px/1.5 Arial, Helvetica, sans-serif;
 	padding: 0;
 	margin:0;
-	background-color: #f4f4f4;
+	background-color:;
 	width: auto;
 	min-height: 200px;
-	background-color:rgba(144, 191, 219,.9);
+	background-color:rgb(144, 191, 219);
 	text-align: center;
 	margin: 0 auto;
 	color: #ffffff;
@@ -18,6 +18,25 @@ body{
 
 
 /*Global Styles*/
+
+/* Navbar */
+
+nav {
+	position:fixed;
+	top:0;
+	padding:1rem;
+	text-align: center;
+	width: 100%;
+}
+
+.navbar{
+	text-align: center;
+}
+
+.title-name{
+	float:left;
+	padding:0;
+}
 
 .container{
 	width:80%;
@@ -68,8 +87,10 @@ ul{
 
 /*Header*/
 
+
+
 header {
-	background-color: none;
+	background-color: rgb(144, 191, 219);
 	color: #ffffff;
 	padding-top: 15px;
 	min-height: 50px;
@@ -103,6 +124,7 @@ header .branding h1{
 header nav{
 	float: right;
 	margin-top: 10px;
+	background-color: rgba(144, 191, 219);
 }
 
 header .highlight, header .current a{
@@ -236,11 +258,13 @@ background: #e6e6e6;
 /*Footer*/
 
 footer {
+	position: fixed;
+	width: 100%;
+	text-align: center;
 	padding: 0px;
-
 	color: #ffffff;
 	background-color: #ccc;
-	text-align: left;
+	bottom:0;
 }
 
 /*Media Queries*/
